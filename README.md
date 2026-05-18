@@ -23,7 +23,7 @@ CareerPilot AI helps users discover personalized career paths, skill recommendat
 |-------------------------|----------------------------------|
 | **Flask**               | Backend Framework                |
 | **LangChain**           | AI Workflow Orchestration        |
-| **Gemini 1.5 Flash**    | Large Language Model             |
+| **Gemini 2.5 Flash**    | Large Language Model             |
 | **HTML + CSS + JS**     | Frontend                         |
 | **python-dotenv**       | Environment Variables            |
 
