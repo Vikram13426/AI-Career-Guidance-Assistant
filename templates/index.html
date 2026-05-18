@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+        AI Career Guidance Assistant
+    </title>
+
+    <link
+        rel="stylesheet"
+        href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+<body>
+
+    <!-- BACKGROUND -->
+
+    <div class="grid-bg"></div>
+
+    <div class="blur-circle purple"></div>
+    <div class="blur-circle blue"></div>
+    <div class="blur-circle pink"></div>
+
+
+    <!-- HERO -->
+
+    <section class="hero-section">
+
+        <div class="hero-badge">
+            AI Powered Career Guidance Platform
+        </div>
+
+        <h1>
+            Build Your Career Roadmap With AI
+        </h1>
+
+        <p>
+            Personalized career paths, skill roadmaps,
+            project ideas, and interview preparation guidance.
+        </p>
+
+    </section>
+
+
+    <!-- MAIN -->
+
+    <div class="main-container">
+
+
+        <!-- LEFT PANEL -->
+
+        <div class="sidebar glass-card">
+
+            <div class="section-title">
+
+                <h3>
+                    Your Career Profile
+                </h3>
+
+                <p>
+                    Enter your profile details to generate
+                    personalized AI career insights.
+                </p>
+
+            </div>
+
+
+            <!-- FORM AREA -->
+
+            <div class="form-area">
+
+
+                <!-- SKILLS -->
+
+                <div class="field">
+
+                    <label>
+                        Skills
+                    </label>
+
+                    <p class="field-info">
+                        Technologies or skills you already know
+                    </p>
+
+                    <textarea
+                        id="skills"
+                        placeholder="Python
+SQL
+HTML
+CSS
+Java
+React
+Machine Learning">
+                    </textarea>
+
+                </div>
+
+
+                <!-- INTERESTS -->
+
+                <div class="field">
+
+                    <label>
+                        Interests
+                    </label>
+
+                    <p class="field-info">
+                        Domains or technologies you enjoy learning
+                    </p>
+
+                    <textarea
+                        id="interests"
+                        placeholder="Artificial Intelligence
+Web Development
+Cybersecurity
+Data Science
+Cloud Computing">
+                    </textarea>
+
+                </div>
+
+
+                <!-- EXPERIENCE -->
+
+                <div class="field">
+
+                    <label>
+                        Experience Level
+                    </label>
+
+                    <p class="field-info">
+                        Select your current stage
+                    </p>
+
+                    <select id="experience">
+
+                        <option value="">
+                            Select Experience Level
+                        </option>
+
+                        <option value="Student">
+                            Student
+                        </option>
+
+                        <option value="Beginner">
+                            Beginner
+                        </option>
+
+                        <option value="Fresher">
+                            Fresher
+                        </option>
+
+                        <option value="Intermediate">
+                            Intermediate
+                        </option>
+
+                        <option value="Advanced">
+                            Advanced
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- GOALS -->
+
+                <div class="field">
+
+                    <label>
+                        Career Goals
+                    </label>
+
+                    <p class="field-info">
+                        Describe the role or career you want
+                    </p>
+
+                    <textarea
+                        id="goals"
+                        placeholder="Become an AI Engineer
+Become a Full Stack Developer
+Become a Data Scientist
+Get placed in a product company">
+                    </textarea>
+
+                </div>
+
+
+                <!-- BUTTON -->
+
+                <button onclick="generateCareerGuidance()">
+
+                    Generate Career Roadmap
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- RIGHT PANEL -->
+
+        <div class="content-area glass-card">
+
+            <div class="content-header">
+
+                <div>
+
+                    <h2>
+                        AI Career Insights
+                    </h2>
+
+                    <p>
+                        Personalized roadmap generated using LangChain + Gemini
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- OUTPUT -->
+
+            <div class="result-wrapper">
+
+                <div id="result">
+
+# Welcome 🚀
+
+Your AI-generated career roadmap will appear here.
+
+You will receive:
+
+✔ Career recommendations  
+✔ Skill roadmap  
+✔ Learning path  
+✔ Beginner project ideas  
+✔ Interview preparation guidance  
+✔ Free learning resources
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   <!-- MARKDOWN PARSER -->
+
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+<script
+    src="{{ url_for('static', filename='js/script.js') }}">
+</script>
+
+</body>
+
+</html>
